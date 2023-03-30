@@ -1,0 +1,294 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+	background: url(../imagen/canvaback.png);
+	background-color: rgb(255, 255, 255);
+	background-size: cover;
+	opacity: 0.7;
+  	font-family: 'Lato', sans-serif;
+  }
+
+  header {
+	width: 100%;
+	height: 60px;
+  }
+  
+  nav {
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+  }
+  
+  nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+  }
+  
+  nav li {
+	margin: 0 10px;
+  }
+  
+  nav a {
+	color: #ffffff;
+	font-size: 30px;
+	text-decoration: none;
+  }
+
+
+  footer {
+	width: 100%;
+	height: 60px;
+	background-color: #333;
+  }
+  
+  .social-icons {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+  }
+  
+  .social-icons li {
+	margin: 0 10px;
+  }
+  
+  .social-icons a {
+	color: white;
+	font-size: 24px;
+	text-decoration: none;
+  }
+
+/*.contenedor{
+ 	width: 90%;
+	max-width: 1000px;
+	padding: 40px 20px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}*/
+.contenedor{
+	width: 100vw;
+    height: 80vh;
+    max-width: 2000px;
+    padding: 40px 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+
+.allFormaTarjeta{
+	width: 100%;
+	max-width: 500px;
+	color: #fff;
+	transition: .3s ease all;
+	transform: rotateY(0deg);
+	transform-style: preserve-3d;
+	cursor: pointer;
+	z-index: 2;
+	
+}
+  
+.allFormaTarjeta > div {
+	padding: 30px;
+	border-radius: 15px;
+	min-height: 315px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	box-shadow: 0 10px 10px 0 rgba(90,116,148,0.3);
+}
+
+
+.allFormaTarjeta .frontFormaTarjeta{
+	width: 100%;
+	background: url(../imagen/patrontarjeta.jpg);
+	background-size: cover;
+
+}
+
+.frontFormaTarjeta .logobrand {
+	text-align: right;
+	min-height: 50px;
+}
+
+.frontFormaTarjeta .logobrand img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	max-width: 80px;
+}
+
+.allFormaTarjeta .chip  img{
+	width: 100%;
+	max-width: 50px;
+	margin-bottom: 20px;
+}
+
+.frontFormaTarjeta .numeroformatarjeta .label {
+	font-size: 16px;
+	color: #000000;
+	margin-bottom: 5px;
+}
+
+.frontFormaTarjeta .nombreformatarjeta .label {
+	font-size: 16px;
+	color: #000000;
+	margin-bottom: 5px;
+}
+
+.frontFormaTarjeta .expiraformaTarjeta .label {
+	font-size: 16px;
+	color: #000000;
+	margin-bottom: 5px;
+}
+
+.frontFormaTarjeta .numeroformatarjeta .numeroFormaTarjeta,
+.frontFormaTarjeta .nombreformatarjeta .nombreFormaTarjeta,
+.frontFormaTarjeta .expiraformaTarjeta .expiraformaTarjeta {
+	color: #000000;
+	font-size: 22px;
+	text-transform: uppercase;
+}
+
+.frontFormaTarjeta .flexbox {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+.backFormaTarjeta {
+	background: url(../imagen/patrontarjeta.jpg);
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	transform: rotateY(180deg);
+	backface-visibility: hidden;
+}
+
+/*.trasera .barra-magnetica {
+	height: 40px;
+	background: #000;
+	width: 100%;
+	position: absolute;
+	top: 30px;
+	left: 0;
+}*/
+
+.formularioTarjeta{
+	background: #fff;
+	width: 100%;
+	max-width: 700px;
+	padding: 30px 30px 30px 30px;
+	border-radius: 10px;
+	
+	z-index: 1;
+	
+}
+
+.formularioTarjeta label {
+	display: block;
+	color: #7d8994;
+	margin-bottom: 5px;
+	font-size: 16px;
+}
+
+.formularioTarjeta input,
+.formularioTarjeta section,
+.formularioTarjeta select
+{
+	border: 2px solid #CED6E0;
+	font-size: 18px;
+	height: 50px;
+	width: 100%;
+	padding: 5px 12px;
+	transition: .3s ease all;
+	border-radius: 5px;
+}
+
+.botonPagar {
+	border: none;
+	padding: 10px;
+	font-size: 22px;
+	/*color: #af8cb8;
+	background: #93b2c0;*/
+	border:2px solid #CED6E0;
+	box-shadow: 2px 2px 10px 0px rgba(156, 162, 172, 0.4);
+	cursor: pointer;
+	height: 50px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*.formularioTarjeta input:hover,
+.formulario-tarjeta select:hover {
+	border: 2px solid #93BDED;
+}
+
+.formulario-tarjeta input:focus,
+.formulario-tarjeta select:focus {
+	outline: rgb(4,4,4);
+	box-shadow: 1px 7px 10px -5px rgba(90,116,148,0.3);
+}*/
+
+.formularioTarjeta input {
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+
+.formularioTarjeta .flexbox {
+	display: flex;
+	justify-content: space-between;
+}
+
+.formularioTarjeta .expira {
+	width: 100%;
+}
+
+.formularioTarjeta .ccv {
+	min-width: 100px;
+}
+
+.formularioTarjeta .select {
+	width: 100%;
+	margin-right: 15px;
+	position: relative;
+}
+
+
+
+/*
+.formulario-tarjeta .grupo-select i {
+	position: absolute;
+	color: #CED6E0;
+	top: 18px;
+	right: 15px;
+	transition: .3s ease all;
+}
+
+.formulario-tarjeta .grupo-select:hover i {
+	color: #93bfed;
+}
+
+.
+
+.formulario-tarjeta .btn-enviar:hover {
+	background: #1850b1;
+
+}
+
+
+

@@ -5,10 +5,147 @@
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Babyface: Skin Sanctuary</a></li>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Productos</a></li>
+          <li><a href="#">Consejos</a></li>
+          <li><a href="#">Regalos</a></li>
+          <li><a href="#">Ofertas</a></li>
+        </ul>
+      </nav>
+
+    </header>
+    
+    <main>
+      <div class="contenedor">
+      
+        
+
+        <form class="formularioTarjeta" id="formularioTarjeta" >
+
+          <div class="numeroformularioTarjeta" id="numeroformularioTarjeta">
+            <label>Número Tarjeta</label>
+            <input type="text" id="numeroFormularioTarjeta" name="numeroFormularioTarjeta"  class="numeroFormularioTarjeta" maxlength="19">
+          </div> 
+          
+          <div class="nombreformularioTarjeta" id="nombreformularioTarjeta">
+            <label>Nombre del titular</label>
+            <input type="text" id="nombreFormularioTarjeta" name="nombreFormularioTarjeta"  class="nombreFormularioTarjeta">
+          </div>
+
+          <div class="expiraFormularioTarjetaMes" id="expiraFormularioTarjetaMes">
+            <label>Mes</label>
+            <select name="mes" id="mesFormularioTarjeta">
+              <option disabled selected>Mes</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+                           
+            </select>
+          </div>
+
+          <div class="expiraFormularioTarjetaYear" id="expiraFormularioTarjetaYear">
+            <label>Año</label>
+            <select name="year" id="yearFormularioTarjeta">
+              <option disabled selected>Año</option>
+              <option value="2023">2023</option>
+              <option value="2024">2024</option>
+              <option value="2025">2025</option>
+              <option value="2026">2026</option>
+              <option value="2027">2027</option>
+              <option value="2028">2028</option>
+              
+            </select>
+          </div>
+
+          <div class="cvvformularioTarjeta" id="cvvformularioTarjeta">
+            <label>CVV</label>
+            <input type="text" id="cvvFormularioTarjeta" name="cvvFormularioTarjeta"  class="cvvFormularioTarjeta" maxlength="3">
+          </div>
+
+        </form>
+
+
+        <section class="allFormaTarjeta" id="allFormaTarjeta">
+
+          <div class="frontFormaTarjeta">
+
+            <div class="logobrand" alt="">
+              <img src="../imagen/mastercard.png">
+            </div>
+            <div class="chip">
+              <img src="../imagen/chipbonito.png">
+            </div>
+
+            <div class="numeroformatarjeta" id="numeroformatarjeta">
+              <p class="label">Número Tarjeta</p>
+              <p class="numeroFormaTarjeta">#### #### #### ####</p>
+            </div>
+
+            <div class="flexbox">
+              <div class="nombreformatarjeta" id="nombreformaTarjeta">
+                <p class="label">Nombre Tarjeta</p>
+                <p class="nombreFormaTarjeta">JOHN DOE </p>
+              </div>
+            
+
+              <div class="expiraformaTarjeta" id="expiraformaTarjeta">
+                <p class="label">Expiración</p>
+                <p class="expiraformaTarjeta">
+                  <span class="mesFormaTarjeta">MM</span>
+                  <span class="yearFormaTarjeta">AA</span>
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="backFormaTarjeta">
+            <div class="barra"></div>
+            <div class="ccv" id="ccv">
+              <p class="label">CCV</p>
+              <p class="cvv"></p>
+            <a href="#" class="link-banco">www.tubanco.com</a>
+          </div>
+              
+          </div>
+
+        </section>
+        
+          
+        
+      
+      </div>
+      <div class="botonPagar" id="botonPagar">
+        <button class="allbtn" type="button" > PAGAR 
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </main>
+
+    <footer>
+      <ul class="social-icons">
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+    </footer>
+
     <script src="index.js" type="module"></script>
   </body>
+  
 </html>
